@@ -30,7 +30,7 @@ export default async function ProductList() {
       {products.map((item: ProductItem) => (
         <div
           key={item.id}
-          className='w-1/2 md:w-1/4 lg:w-1/6 bg-white shadow-md rounded-lg border border-gray-200'
+          className='w-1/2 md:w-1/4 lg:w-1/6 bg-white shadow-md rounded-lg border border-gray-200 hover:-translate-y-1 transition-all'
           // onClick={() => handleItemClick()}
         >
           <div className='p-4 bg-white rounded-lg'>
@@ -38,22 +38,11 @@ export default async function ProductList() {
               {item.title}
             </h2>
 
-            {/* <div className='aspect-w-1 aspect-h-1 w-full overflow-hidden bg-gray-100'>
-              <Image
-                loading='lazy'
-                src={item.images[0]}
-                width={300}
-                height={300}
-                alt='Product Image'
-                className='object-cover'
-                sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-              />
-            </div> */}
             <ProductImage
               source={item.images[0]}
               width={200}
               height={200}
-              alt='pro-imgs'
+              alt='pro-img'
             />
             <p className='text-gray-600 mt-2 truncate'>{item.description}</p>
             <div className='mt-4 text-gray-800 font-bold text-lg'>
