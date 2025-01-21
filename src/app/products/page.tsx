@@ -1,4 +1,4 @@
-import { ProductImage } from "@/components/ui/ProductImage"
+import { ProductImage } from "@/components/ProductImage"
 import { CloneStarRating } from "../../components/CloneStarRating"
 // import { redirect } from "next/navigation"
 

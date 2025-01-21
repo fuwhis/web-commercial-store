@@ -56,11 +56,11 @@ function Footer() {
                   y2="129.74"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop offset="0" stop-color="#fae100" />
-                  <stop offset=".15" stop-color="#fcb720" />
-                  <stop offset=".3" stop-color="#ff7950" />
-                  <stop offset=".5" stop-color="#ff1c74" />
-                  <stop offset="1" stop-color="#6c1cd1" />
+                  <stop offset="0" stopColor="#fae100" />
+                  <stop offset=".15" stopColor="#fcb720" />
+                  <stop offset=".3" stopColor="#ff7950" />
+                  <stop offset=".5" stopColor="#ff1c74" />
+                  <stop offset="1" stopColor="#6c1cd1" />
                 </linearGradient>
                 <g data-name="Layer 2">
                   <g data-name="03.Instagram">
