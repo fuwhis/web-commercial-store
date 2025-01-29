@@ -1,6 +1,7 @@
 import Footer from "@/components/ui/Footer"
 import ProductList from "./products/page"
 import Header from "@/components/ui/Header"
+import { Suspense } from "react"
 
 export default function Home() {
   return (
@@ -11,7 +12,9 @@ export default function Home() {
           <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">
             Product List
           </h1>
-          <ProductList />
+          <Suspense fallback={<p>loading...</p>}>
+            <ProductList />
+          </Suspense>
         </div>
       </main>
       <Footer />
